@@ -1,0 +1,1073 @@
+/* =========================================================
+   1. VARIÁVEIS / TEMAS
+   ========================================================= */
+
+:root {
+  --paper: #FBF7EF;
+  --paper-raised: #F3EDE0;
+  --ink: #16213A;
+  --ink-soft: #42506B;
+
+  --accent-1: #C97A1A;
+  --accent-1-bg: #E8A33D;
+
+  --accent-2: #0F5257;
+  --accent-2-soft: #DCEAE6;
+
+  --line: rgba(22, 33, 58, 0.14);
+  --focus: #C2410C;
+
+  --radius-s: 10px;
+  --radius-m: 18px;
+
+  --serif: 'Fraunces', Georgia, serif;
+  --sans: 'Atkinson Hyperlegible', 'Segoe UI', Arial, sans-serif;
+
+  color-scheme: light;
+}
+
+
+/* =========================================================
+   2. TEMA ESCURO
+   ========================================================= */
+
+:root[data-theme="dark"] {
+  --paper: #12161F;
+  --paper-raised: #1B2130;
+  --ink: #F3EFE6;
+  --ink-soft: #C4CAD9;
+
+  --accent-1: #F2B705;
+  --accent-1-bg: #F2B705;
+
+  --accent-2: #4FD1C5;
+  --accent-2-soft: #1D3A38;
+
+  --line: rgba(243, 239, 230, 0.16);
+  --focus: #F2B705;
+
+  color-scheme: dark;
+}
+
+
+/* =========================================================
+   3. TEMA ESCURO AUTOMÁTICO
+   ========================================================= */
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #12161F;
+    --paper-raised: #1B2130;
+    --ink: #F3EFE6;
+    --ink-soft: #C4CAD9;
+
+    --accent-1: #F2B705;
+    --accent-1-bg: #F2B705;
+
+    --accent-2: #4FD1C5;
+    --accent-2-soft: #1D3A38;
+
+    --line: rgba(243, 239, 230, 0.16);
+    --focus: #F2B705;
+
+    color-scheme: dark;
+  }
+}
+
+
+/* =========================================================
+   4. RESET / CONFIGURAÇÕES GERAIS
+   ========================================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(84px + env(safe-area-inset-top, 0px));
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.65;
+
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: var(--accent-2);
+}
+
+:root[data-theme="dark"] a {
+  color: var(--accent-2);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--serif);
+  font-weight: 600;
+  line-height: 1.12;
+  margin: 0 0 .5em;
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+.wrap {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.measure {
+  max-width: 62ch;
+}
+
+
+/* =========================================================
+   5. ACESSIBILIDADE / FOCO
+   ========================================================= */
+
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.skip-link {
+  position: absolute;
+  left: 16px;
+  top: -60px;
+
+  background: var(--ink);
+  color: var(--paper);
+
+  padding: 10px 16px;
+  border-radius: 8px;
+  z-index: 200;
+
+  font-weight: 700;
+  text-decoration: none;
+
+  transition: top .15s ease;
+}
+
+.skip-link:focus {
+  top: calc(16px + env(safe-area-inset-top, 0px));
+}
+
+
+/* =========================================================
+   6. HEADER / NAVEGAÇÃO
+   ========================================================= */
+
+header.site {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  top: env(safe-area-inset-top, 0px);
+
+  background: color-mix(
+    in srgb,
+    var(--paper) 92%,
+    transparent
+  );
+
+  backdrop-filter: blur(10px);
+
+  border-bottom: 1px solid var(--line);
+  padding: 16px 0;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.brand {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.brand .mark {
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--ink);
+
+  text-decoration: none;
+  letter-spacing: -.01em;
+}
+
+.brand .mark span {
+  color: var(--accent-1);
+}
+
+.brand .tagline {
+  color: var(--ink-soft);
+  font-size: .92rem;
+  margin: 0;
+}
+
+
+/* -------------------------
+   Navegação principal
+   ------------------------- */
+
+nav.primary ul {
+  list-style: none;
+  display: flex;
+
+  gap: 4px;
+  margin: 0;
+  padding: 0;
+
+  flex-wrap: wrap;
+}
+
+nav.primary a {
+  text-decoration: none;
+  color: var(--ink);
+  font-weight: 700;
+  font-size: .95rem;
+
+  padding: 9px 14px;
+  border-radius: 999px;
+
+  display: inline-block;
+}
+
+nav.primary a:hover {
+  background: var(--paper-raised);
+}
+
+nav.primary a[aria-current="page"] {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+
+/* -------------------------
+   Botão de tema
+   ------------------------- */
+
+#toggle-tema {
+  border: 1px solid var(--line);
+  background: var(--paper-raised);
+  color: var(--ink);
+
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: .85rem;
+
+  padding: 8px 12px;
+  border-radius: 999px;
+
+  cursor: pointer;
+}
+
+#toggle-tema:hover {
+  border-color: var(--accent-2);
+}
+
+
+/* =========================================================
+   7. HERO / APRESENTAÇÃO
+   ========================================================= */
+
+.hero {
+  padding: 64px 0 48px;
+  border-bottom: 1px solid var(--line);
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+
+  gap: 48px;
+  align-items: start;
+}
+
+.eyebrow {
+  display: inline-block;
+
+  font-weight: 700;
+  color: var(--accent-2);
+
+  background: var(--accent-2-soft);
+
+  padding: 6px 14px;
+  border-radius: 999px;
+
+  font-size: .85rem;
+  margin-bottom: 18px;
+}
+
+.hero h1 {
+  font-size: clamp(2.1rem, 4.6vw, 3.4rem);
+  max-width: 14ch;
+}
+
+.hero .lede {
+  font-size: 1.15rem;
+  color: var(--ink-soft);
+  max-width: 46ch;
+}
+
+.hero .principal {
+  font-family: var(--serif);
+  font-size: 1.3rem;
+  font-style: italic;
+
+  border-left: 4px solid var(--accent-1-bg);
+  padding-left: 18px;
+
+  margin-top: 28px;
+  max-width: 44ch;
+}
+
+
+/* -------------------------
+   Cards de estatísticas
+   ------------------------- */
+
+.stat-card {
+  background: var(--paper-raised);
+
+  border: 1px solid var(--line);
+  border-radius: var(--radius-m);
+
+  padding: 28px;
+}
+
+.stat-card .num {
+  font-family: var(--serif);
+  font-size: 2.6rem;
+  font-weight: 700;
+
+  color: var(--accent-1);
+  line-height: 1;
+}
+
+.stat-card p {
+  margin-top: 10px;
+  color: var(--ink-soft);
+  font-size: .95rem;
+}
+
+.stat-card .fonte {
+  font-size: .78rem;
+  color: var(--ink-soft);
+
+  opacity: .85;
+  margin-top: 14px;
+}
+
+
+/* -------------------------
+   Chips
+   ------------------------- */
+
+.chip-row {
+  display: flex;
+
+  gap: 10px;
+  flex-wrap: wrap;
+
+  margin-top: 20px;
+}
+
+.chip {
+  font-size: .82rem;
+  font-weight: 700;
+
+  border: 1px solid var(--line);
+  border-radius: 999px;
+
+  padding: 6px 12px;
+
+  color: var(--ink-soft);
+}
+
+
+/* =========================================================
+   8. SEÇÕES GERAIS
+   ========================================================= */
+
+section {
+  padding: 56px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+section:last-of-type {
+  border-bottom: none;
+}
+
+.section-head {
+  max-width: 60ch;
+  margin-bottom: 36px;
+}
+
+.section-head .kicker {
+  color: var(--accent-2);
+  font-weight: 700;
+  font-size: .85rem;
+}
+
+.section-head h2 {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  margin-top: 6px;
+}
+
+.section-head p {
+  color: var(--ink-soft);
+  font-size: 1.02rem;
+}
+
+
+/* =========================================================
+   9. ARTIGOS / TÓPICOS DE CONTEÚDO
+   ========================================================= */
+
+.topics {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.topic-row {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+
+  align-items: center;
+}
+
+.topic-row.reverse .topic-media {
+  order: 2;
+}
+
+.topic-row.reverse .topic-text {
+  order: 1;
+}
+
+
+/* -------------------------
+   Imagens dos tópicos
+   ------------------------- */
+
+.topic-media {
+  border-radius: var(--radius-m);
+  overflow: hidden;
+
+  border: 1px solid var(--line);
+  background: var(--paper-raised);
+}
+
+.topic-media img {
+  width: 100%;
+  height: 100%;
+
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+
+/* -------------------------
+   Texto dos tópicos
+   ------------------------- */
+
+.topic-text .icon {
+  width: 42px;
+  height: 42px;
+
+  border-radius: 12px;
+  background: var(--accent-1-bg);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 16px;
+
+  color: var(--ink);
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.topic-text h3 {
+  font-size: 1.35rem;
+  margin-bottom: 12px;
+}
+
+.topic-text p {
+  color: var(--ink-soft);
+  margin-bottom: 0;
+}
+
+
+/* =========================================================
+   10. CHECKLIST
+   ========================================================= */
+
+.checklist {
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+
+  display: grid;
+  gap: 12px;
+}
+
+.checklist li {
+  display: flex;
+
+  gap: 12px;
+  align-items: flex-start;
+
+  color: var(--ink-soft);
+
+  padding: 14px 16px;
+
+  background: var(--paper-raised);
+  border: 1px solid var(--line);
+
+  border-radius: var(--radius-s);
+}
+
+.checklist li::before {
+  content: "✓";
+
+  flex: none;
+
+  width: 22px;
+  height: 22px;
+
+  border-radius: 50%;
+
+  background: var(--accent-2);
+  color: var(--paper);
+
+  font-size: .78rem;
+  font-weight: 700;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 2px;
+}
+
+
+/* =========================================================
+   11. GALERIA
+   ========================================================= */
+
+.gallery {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+
+  margin-top: 8px;
+}
+
+figure.gal {
+  margin: 0;
+
+  border: 1px solid var(--line);
+  border-radius: var(--radius-m);
+
+  overflow: hidden;
+
+  background: var(--paper-raised);
+}
+
+figure.gal img {
+  width: 100%;
+  height: auto;
+
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+figure.gal figcaption {
+  padding: 16px 18px;
+
+  font-size: .92rem;
+  color: var(--ink-soft);
+}
+
+figure.gal figcaption strong {
+  display: block;
+
+  color: var(--ink);
+
+  font-family: var(--serif);
+  font-size: 1.02rem;
+
+  margin-bottom: 4px;
+}
+
+
+/* =========================================================
+   12. MÍDIAS
+   ========================================================= */
+
+.media-block {
+  margin-bottom: 44px;
+}
+
+.media-block:last-child {
+  margin-bottom: 0;
+}
+
+.media-head {
+  display: flex;
+
+  align-items: center;
+  gap: 14px;
+
+  margin-bottom: 18px;
+}
+
+.media-head .emoji-badge {
+  width: 44px;
+  height: 44px;
+
+  border-radius: 12px;
+
+  background: var(--accent-2);
+  color: var(--paper);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.3rem;
+  flex: none;
+}
+
+.media-head h3 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+
+/* -------------------------
+   Player
+   ------------------------- */
+
+.player-shell {
+  background: var(--ink);
+  color: var(--paper);
+
+  border-radius: var(--radius-m);
+  overflow: hidden;
+
+  border: 1px solid var(--line);
+}
+
+:root[data-theme="dark"] .player-shell {
+  background: var(--paper-raised);
+}
+
+.player-visual {
+  aspect-ratio: 16 / 8;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--accent-2) 55%, var(--ink)),
+    var(--ink)
+  );
+
+  position: relative;
+}
+
+.player-visual .playbtn {
+  width: 64px;
+  height: 64px;
+
+  border-radius: 50%;
+
+  background: var(--paper);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--ink);
+  font-size: 1.4rem;
+}
+
+.player-visual .label {
+  position: absolute;
+
+  bottom: 14px;
+  left: 18px;
+
+  font-size: .8rem;
+  letter-spacing: .02em;
+
+  color: color-mix(
+    in srgb,
+    var(--paper) 75%,
+    transparent
+  );
+}
+
+.native-media {
+  width: 100%;
+  display: block;
+  background: #000;
+}
+
+.media-note {
+  font-size: .85rem;
+
+  color: var(--ink-soft);
+
+  padding: 12px 18px;
+
+  border-top: 1px dashed var(--line);
+
+  background: var(--paper-raised);
+}
+
+:root[data-theme="dark"] .media-note {
+  background: transparent;
+}
+
+
+/* =========================================================
+   13. TRANSCRIÇÕES
+   ========================================================= */
+
+details.transcript {
+  margin-top: 16px;
+
+  border: 1px solid var(--line);
+  border-radius: var(--radius-s);
+
+  background: var(--paper-raised);
+
+  overflow: hidden;
+}
+
+details.transcript summary {
+  cursor: pointer;
+
+  padding: 16px 20px;
+
+  font-weight: 700;
+  list-style: none;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 12px;
+}
+
+details.transcript summary::-webkit-details-marker {
+  display: none;
+}
+
+details.transcript summary::after {
+  content: "+";
+
+  font-size: 1.3rem;
+  font-weight: 400;
+
+  color: var(--accent-2);
+
+  flex: none;
+  line-height: 1;
+}
+
+details.transcript[open] summary::after {
+  content: "–";
+}
+
+details.transcript .conteudo-transcricao {
+  padding: 0 20px 22px;
+}
+
+details.transcript .conteudo-transcricao p {
+  margin: 0 0 12px;
+  color: var(--ink-soft);
+}
+
+details.transcript .fala {
+  color: var(--ink);
+}
+
+details.transcript .fala strong {
+  color: var(--accent-2);
+}
+
+details.transcript .visual-desc {
+  font-style: italic;
+
+  color: var(--ink-soft);
+
+  border-left: 3px solid var(--accent-1-bg);
+
+  padding-left: 12px;
+}
+
+
+/* =========================================================
+   14. SOBRE / EQUIPE / IA
+   ========================================================= */
+
+.sobre-grid {
+  display: grid;
+
+  grid-template-columns: 1.1fr .9fr;
+  gap: 40px;
+}
+
+
+/* -------------------------
+   Tabela de IA
+   ------------------------- */
+
+.ia-table {
+  border-collapse: collapse;
+
+  width: 100%;
+
+  font-size: .92rem;
+}
+
+.ia-table caption {
+  text-align: left;
+
+  color: var(--ink-soft);
+
+  font-size: .85rem;
+
+  margin-bottom: 10px;
+}
+
+.ia-table th,
+.ia-table td {
+  text-align: left;
+
+  padding: 10px 12px;
+
+  border-bottom: 1px solid var(--line);
+
+  vertical-align: top;
+}
+
+.ia-table th {
+  color: var(--ink-soft);
+
+  font-weight: 700;
+  font-size: .8rem;
+}
+
+
+/* -------------------------
+   Lista da equipe
+   ------------------------- */
+
+.team-list {
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+
+  display: grid;
+  gap: 10px;
+}
+
+.team-list li {
+  padding: 12px 16px;
+
+  border: 1px solid var(--line);
+  border-radius: var(--radius-s);
+
+  background: var(--paper-raised);
+
+  display: flex;
+
+  justify-content: space-between;
+  gap: 10px;
+
+  color: var(--ink-soft);
+  font-size: .95rem;
+}
+
+.team-list li b {
+  color: var(--ink);
+}
+
+
+/* =========================================================
+   15. FOOTER
+   ========================================================= */
+
+footer.site {
+  background: var(--ink);
+  color: var(--paper);
+
+  padding: 48px 0 32px;
+}
+
+footer.site a {
+  color: var(--accent-1-bg);
+}
+
+.footer-grid {
+  display: grid;
+
+  grid-template-columns: 1.2fr .8fr;
+  gap: 32px;
+
+  align-items: start;
+}
+
+footer.site .msg {
+  font-family: var(--serif);
+
+  font-size: 1.5rem;
+
+  max-width: 26ch;
+  line-height: 1.2;
+}
+
+footer.site p {
+  color: color-mix(
+    in srgb,
+    var(--paper) 72%,
+    transparent
+  );
+
+  font-size: .92rem;
+}
+
+.footer-bottom {
+  border-top: 1px solid color-mix(
+    in srgb,
+    var(--paper) 18%,
+    transparent
+  );
+
+  margin-top: 32px;
+  padding-top: 20px;
+
+  font-size: .82rem;
+
+  color: color-mix(
+    in srgb,
+    var(--paper) 60%,
+    transparent
+  );
+
+  display: flex;
+
+  justify-content: space-between;
+
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+
+/* =========================================================
+   16. CONTEÚDO HORIZONTAL
+   ========================================================= */
+
+.scroll-x {
+  overflow-x: auto;
+}
+
+
+/* =========================================================
+   17. RESPONSIVIDADE — TABLET / MOBILE
+   ========================================================= */
+
+@media (max-width: 860px) {
+
+  .hero-grid,
+  .sobre-grid,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .topic-row {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .topic-row.reverse .topic-media,
+  .topic-row .topic-media {
+    order: 1;
+  }
+
+  .topic-row.reverse .topic-text,
+  .topic-row .topic-text {
+    order: 2;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  nav.primary ul {
+    gap: 2px;
+  }
+
+  .header-inner {
+    gap: 12px;
+  }
+}
+
+
+/* =========================================================
+   18. REDUÇÃO DE MOVIMENTO
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  * {
+    transition: none !important;
+  }
+}

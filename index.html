@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Acessa+ — Tecnologia para todos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
+
+<header class="site">
+  <div class="wrap header-inner">
+    <div class="brand">
+      <a href="#inicio" class="mark">Acessa<span>+</span></a>
+      <p class="tagline">Tecnologia para todos: inclusão e acessibilidade</p>
+    </div>
+    <nav class="primary" aria-label="Menu principal">
+      <ul>
+        <li><a href="#inicio" aria-current="page">Início</a></li>
+        <li><a href="#conteudo-principal">Conteúdo</a></li>
+        <li><a href="#midias">Mídias</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+      </ul>
+    </nav>
+    <button type="button" id="toggle-tema" aria-pressed="false">🌙 Modo escuro</button>
+  </div>
+</header>
+
+<main id="conteudo-topo">
+
+  <!-- 1. APRESENTAÇÃO -->
+  <section id="inicio" class="hero" aria-labelledby="hero-titulo">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">Projeto de conscientização</span>
+        <h1 id="hero-titulo">Tecnologia para todos: por que a inclusão não é opcional</h1>
+        <p class="lede">A internet só cumpre sua promessa quando qualquer pessoa consegue usá-la — com os olhos, os ouvidos, as mãos e o ritmo que tiver. Acessibilidade digital é o conjunto de decisões, pequenas e grandes, que tornam isso possível.</p>
+        <p class="principal">Uma página acessível não é uma versão especial do site: é o site funcionando como deveria, para todo mundo.</p>
+        <div class="chip-row">
+          <span class="chip">Recorte: tecnologia assistiva</span>
+          <span class="chip">HTML semântico</span>
+          <span class="chip">Produzido com apoio de IA</span>
+        </div>
+      </div>
+      <aside class="stat-card" aria-label="Dado sobre acessibilidade">
+        <p class="num">16%</p>
+        <p>da população mundial vive com alguma forma de deficiência — cerca de 1,3 bilhão de pessoas — segundo estimativa da Organização Mundial da Saúde (2023). Para essas pessoas, um botão sem rótulo ou um vídeo sem legenda não é um detalhe: é uma porta fechada.</p>
+        <p class="fonte">Fonte: OMS, relatório global sobre equidade em saúde para pessoas com deficiência (2023).</p>
+      </aside>
+    </div>
+  </section>
+
+  <!-- 2. CONTEÚDO PRINCIPAL -->
+  <section id="conteudo-principal" aria-labelledby="conteudo-titulo">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Conteúdo principal</p>
+        <h2 id="conteudo-titulo">Entendendo a acessibilidade digital</h2>
+        <p>Quatro ideias para começar a enxergar a web pelas lentes de quem navega de um jeito diferente do seu.</p>
+      </div>
+
+      <div class="topics">
+        <div class="topic-row">
+          <div class="topic-media">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNjAwIj4KICA8cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgZmlsbD0iI0ZCRjNFNCIvPgogIDxjaXJjbGUgY3g9IjY2MCIgY3k9IjkwIiByPSI5MCIgZmlsbD0iI0YyRTJDMCIvPgogIDxjaXJjbGUgY3g9IjkwIiBjeT0iNTIwIiByPSI4MCIgZmlsbD0iI0RDRUFFNiIvPgoKICA8IS0tIHRpdGxlIGdseXBoOiB1bWEgcGVzc29hIGNlbnRyYWwsIHF1YXRybyBjYW1pbmhvcyBkZSBhY2Vzc28gLS0+CiAgPGNpcmNsZSBjeD0iNDAwIiBjeT0iMzAwIiByPSI0NiIgZmlsbD0iIzBGNTI1NyIvPgogIDxjaXJjbGUgY3g9IjQwMCIgY3k9IjI3OCIgcj0iMTYiIGZpbGw9IiNGQkYzRTQiLz4KICA8cGF0aCBkPSJNMzcyIDMzMCBxMjggLTIyIDU2IDAiIHN0cm9rZT0iI0ZCRjNFNCIgc3Ryb2tlLXdpZHRoPSI4IiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KCiAgPCEtLSBjb25lY3RvcmVzIC0tPgogIDxwYXRoIGQ9Ik00MDAgMjU0IEw0MDAgMTUwIiBzdHJva2U9IiMxNjIxM0EiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlLWRhc2hhcnJheT0iMiAxMCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBvcGFjaXR5PSIwLjU1Ii8+CiAgPHBhdGggZD0iTTQwMCAzNDYgTDQwMCA0NTAiIHN0cm9rZT0iIzE2MjEzQSIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2UtZGFzaGFycmF5PSIyIDEwIiBzdHJva2UtbGluZWNhcD0icm91bmQiIG9wYWNpdHk9IjAuNTUiLz4KICA8cGF0aCBkPSJNMzU0IDMwMCBMMjAwIDMwMCIgc3Ryb2tlPSIjMTYyMTNBIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZS1kYXNoYXJyYXk9IjIgMTAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgb3BhY2l0eT0iMC41NSIvPgogIDxwYXRoIGQ9Ik00NDYgMzAwIEw2MDAgMzAwIiBzdHJva2U9IiMxNjIxM0EiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlLWRhc2hhcnJheT0iMiAxMCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBvcGFjaXR5PSIwLjU1Ii8+CgogIDwhLS0gVmVyOiBvbGhvIC0tPgogIDxnPgogICAgPGNpcmNsZSBjeD0iNDAwIiBjeT0iMTEwIiByPSI1MiIgZmlsbD0iI0U4QTMzRCIvPgogICAgPHBhdGggZD0iTTM2OCAxMTAgcTMyIC0zMCA2NCAwIHEtMzIgMzAgLTY0IDAgWiIgZmlsbD0iI0ZCRjNFNCIvPgogICAgPGNpcmNsZSBjeD0iNDAwIiBjeT0iMTEwIiByPSIxMSIgZmlsbD0iIzE2MjEzQSIvPgogICAgPHRleHQgeD0iNDAwIiB5PSIxODIiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyMCIgZmlsbD0iIzE2MjEzQSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC13ZWlnaHQ9IjcwMCI+VmVyPC90ZXh0PgogIDwvZz4KCiAgPCEtLSBPdXZpcjogb25kYSBzb25vcmEgLS0+CiAgPGc+CiAgICA8Y2lyY2xlIGN4PSI0MDAiIGN5PSI0OTAiIHI9IjUyIiBmaWxsPSIjMEY1MjU3Ii8+CiAgICA8cGF0aCBkPSJNMzgyIDQ3MCB2NDAiIHN0cm9rZT0iI0ZCRjNFNCIgc3Ryb2tlLXdpZHRoPSI3IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICAgIDxwYXRoIGQ9Ik0zOTYgNDU4IHY2NCIgc3Ryb2tlPSIjRkJGM0U0IiBzdHJva2Utd2lkdGg9IjciIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogICAgPHBhdGggZD0iTTQxMCA0NzAgdjQwIiBzdHJva2U9IiNGQkYzRTQiIHN0cm9rZS13aWR0aD0iNyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgICA8cGF0aCBkPSJNNDI0IDQ3OCB2MjQiIHN0cm9rZT0iI0ZCRjNFNCIgc3Ryb2tlLXdpZHRoPSI3IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICAgIDx0ZXh0IHg9IjQwMCIgeT0iNTYyIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjAiIGZpbGw9IiMxNjIxM0EiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtd2VpZ2h0PSI3MDAiPk91dmlyPC90ZXh0PgogIDwvZz4KCiAgPCEtLSBOYXZlZ2FyOiB0ZWNsYWRvIC0tPgogIDxnPgogICAgPGNpcmNsZSBjeD0iMTUwIiBjeT0iMzAwIiByPSI1MiIgZmlsbD0iI0M5N0ExQSIvPgogICAgPHJlY3QgeD0iMTIwIiB5PSIyODQiIHdpZHRoPSI2MCIgaGVpZ2h0PSIzNCIgcng9IjYiIGZpbGw9IiNGQkYzRTQiLz4KICAgIDxyZWN0IHg9IjEyOCIgeT0iMjkyIiB3aWR0aD0iMTAiIGhlaWdodD0iOCIgcng9IjIiIGZpbGw9IiMxNjIxM0EiLz4KICAgIDxyZWN0IHg9IjE0NCIgeT0iMjkyIiB3aWR0aD0iMTAiIGhlaWdodD0iOCIgcng9IjIiIGZpbGw9IiMxNjIxM0EiLz4KICAgIDxyZWN0IHg9IjE2MCIgeT0iMjkyIiB3aWR0aD0iMTAiIGhlaWdodD0iOCIgcng9IjIiIGZpbGw9IiMxNjIxM0EiLz4KICAgIDxyZWN0IHg9IjEyOCIgeT0iMzA0IiB3aWR0aD0iNDIiIGhlaWdodD0iOCIgcng9IjIiIGZpbGw9IiMxNjIxM0EiLz4KICAgIDx0ZXh0IHg9IjE1MCIgeT0iMzgwIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjAiIGZpbGw9IiMxNjIxM0EiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtd2VpZ2h0PSI3MDAiPk5hdmVnYXI8L3RleHQ+CiAgPC9nPgoKICA8IS0tIENvbXByZWVuZGVyOiBiYWzDo28gZGUgZmFsYSBzaW1wbGlmaWNhZGEgLS0+CiAgPGc+CiAgICA8Y2lyY2xlIGN4PSI2NTAiIGN5PSIzMDAiIHI9IjUyIiBmaWxsPSIjOEI1RTNDIi8+CiAgICA8cmVjdCB4PSI2MjIiIHk9IjI4MiIgd2lkdGg9IjU2IiBoZWlnaHQ9IjM0IiByeD0iOCIgZmlsbD0iI0ZCRjNFNCIvPgogICAgPHBhdGggZD0iTTYzNiAzMTYgbC04IDE0IGwxNiAtOCBaIiBmaWxsPSIjRkJGM0U0Ii8+CiAgICA8cmVjdCB4PSI2MzIiIHk9IjI5MSIgd2lkdGg9IjM2IiBoZWlnaHQ9IjYiIHJ4PSIzIiBmaWxsPSIjMTYyMTNBIi8+CiAgICA8cmVjdCB4PSI2MzIiIHk9IjMwMSIgd2lkdGg9IjI0IiBoZWlnaHQ9IjYiIHJ4PSIzIiBmaWxsPSIjMTYyMTNBIi8+CiAgICA8dGV4dCB4PSI2NTAiIHk9IjM4MCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjIwIiBmaWxsPSIjMTYyMTNBIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXdlaWdodD0iNzAwIj5Db21wcmVlbmRlcjwvdGV4dD4KICA8L2c+Cjwvc3ZnPgo=" alt="Ilustração de uma pessoa no centro ligada a quatro ícones: um olho (ver), uma onda sonora (ouvir), um teclado (navegar) e um balão de fala simplificada (compreender), representando as diferentes formas de acessar um mesmo conteúdo.">
+          </div>
+          <div class="topic-text">
+            <div class="icon" aria-hidden="true">01</div>
+            <h3>O que é acessibilidade digital?</h3>
+            <p>É a prática de projetar sites e aplicativos para que pessoas com deficiência visual, auditiva, motora, cognitiva ou com limitações temporárias — um braço engessado, uma tela quebrada, uma conexão lenta — consigam entender e operar o conteúdo. Não é um recurso extra: é um requisito de qualidade, do mesmo jeito que um site precisa carregar rápido.</p>
+          </div>
+        </div>
+
+        <div class="topic-row reverse">
+          <div class="topic-media">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNjAwIj4KICA8cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgZmlsbD0iI0ZCRjNFNCIvPgogIDxjaXJjbGUgY3g9IjY3MCIgY3k9IjQ3MCIgcj0iMTAwIiBmaWxsPSIjRjJFMkMwIi8+CiAgPGNpcmNsZSBjeD0iOTAiIGN5PSIxMTAiIHI9IjgwIiBmaWxsPSIjRENFQUU2Ii8+CgogIDwhLS0gamFuZWxhIGRvIG5hdmVnYWRvciBhbyBmdW5kbywgYmFpeG8gY29udHJhc3RlIC0tPgogIDxyZWN0IHg9IjE0MCIgeT0iOTAiIHdpZHRoPSI1MjAiIGhlaWdodD0iMjYwIiByeD0iMTQiIGZpbGw9IiNFRkU3RDQiLz4KICA8cmVjdCB4PSIxNDAiIHk9IjkwIiB3aWR0aD0iNTIwIiBoZWlnaHQ9IjM0IiByeD0iMTQiIGZpbGw9IiNFM0Q5QzAiLz4KICA8Y2lyY2xlIGN4PSIxNjQiIGN5PSIxMDciIHI9IjYiIGZpbGw9IiNEOENCQTkiLz4KICA8Y2lyY2xlIGN4PSIxODQiIGN5PSIxMDciIHI9IjYiIGZpbGw9IiNEOENCQTkiLz4KICA8Y2lyY2xlIGN4PSIyMDQiIGN5PSIxMDciIHI9IjYiIGZpbGw9IiNEOENCQTkiLz4KCiAgPCEtLSBpbWFnZW0gcXVlYnJhZGEgLS0+CiAgPHJlY3QgeD0iMTY4IiB5PSIxNDYiIHdpZHRoPSIxNTAiIGhlaWdodD0iMTEwIiByeD0iOCIgZmlsbD0iI0UzRDlDMCIvPgogIDxwYXRoIGQ9Ik0xODggMjI2IGwzMiAtMzggbDI0IDI2IGwxOCAtMjAgbDMwIDMyIiBzdHJva2U9IiNDOUJCOTQiIHN0cm9rZS13aWR0aD0iNiIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CiAgPGNpcmNsZSBjeD0iMjk2IiBjeT0iMTY4IiByPSIyNiIgZmlsbD0iI0IyM0IyRSIvPgogIDxwYXRoIGQ9Ik0yODYgMTU4IGwyMCAyMCBNMzA2IDE1OCBsLTIwIDIwIiBzdHJva2U9IiNGQkYzRTQiIHN0cm9rZS13aWR0aD0iNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CgogIDwhLS0gdGV4dG8gZGUgYmFpeG8gY29udHJhc3RlIC0tPgogIDxyZWN0IHg9IjM0MCIgeT0iMTUwIiB3aWR0aD0iMjgwIiBoZWlnaHQ9IjEyIiByeD0iNCIgZmlsbD0iI0Q4Q0JBOSIvPgogIDxyZWN0IHg9IjM0MCIgeT0iMTcyIiB3aWR0aD0iMjYwIiBoZWlnaHQ9IjEwIiByeD0iNCIgZmlsbD0iI0Q4Q0JBOSIvPgogIDxyZWN0IHg9IjM0MCIgeT0iMTkyIiB3aWR0aD0iMjcwIiBoZWlnaHQ9IjEwIiByeD0iNCIgZmlsbD0iI0Q4Q0JBOSIvPgogIDxyZWN0IHg9IjM0MCIgeT0iMjEyIiB3aWR0aD0iMTgwIiBoZWlnaHQ9IjEwIiByeD0iNCIgZmlsbD0iI0Q4Q0JBOSIvPgoKICA8IS0tIGJvdGFvIHNvLW1vdXNlIC0tPgogIDxyZWN0IHg9IjE2OCIgeT0iMjgwIiB3aWR0aD0iMTUwIiBoZWlnaHQ9IjQwIiByeD0iOCIgZmlsbD0iI0Q4Q0JBOSIvPgogIDxjaXJjbGUgY3g9IjM2MCIgY3k9IjMwMCIgcj0iMjYiIGZpbGw9IiNCMjNCMkUiLz4KICA8cGF0aCBkPSJNMzQ4IDI4OCB2MTAgYTEyIDEyIDAgMCAwIDI0IDAgdi0xMCIgc3Ryb2tlPSIjRkJGM0U0IiBzdHJva2Utd2lkdGg9IjUiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDxyZWN0IHg9IjM1NiIgeT0iMjkyIiB3aWR0aD0iOCIgaGVpZ2h0PSIxMCIgcng9IjQiIGZpbGw9IiNGQkYzRTQiLz4KCiAgPCEtLSB0ZWNsYWRvIGJsb3F1ZWFkbyAtLT4KICA8Zz4KICAgIDxyZWN0IHg9IjQyMCIgeT0iMjc4IiB3aWR0aD0iMTgwIiBoZWlnaHQ9IjQ2IiByeD0iOCIgZmlsbD0iI0Q4Q0JBOSIvPgogICAgPHJlY3QgeD0iNDMyIiB5PSIyODgiIHdpZHRoPSIyMCIgaGVpZ2h0PSIxMiIgcng9IjMiIGZpbGw9IiNFRkU3RDQiLz4KICAgIDxyZWN0IHg9IjQ1OCIgeT0iMjg4IiB3aWR0aD0iMjAiIGhlaWdodD0iMTIiIHJ4PSIzIiBmaWxsPSIjRUZFN0Q0Ii8+CiAgICA8cmVjdCB4PSI0ODQiIHk9IjI4OCIgd2lkdGg9IjIwIiBoZWlnaHQ9IjEyIiByeD0iMyIgZmlsbD0iI0VGRTdENCIvPgogICAgPHJlY3QgeD0iNDMyIiB5PSIzMDQiIHdpZHRoPSI3MiIgaGVpZ2h0PSIxMiIgcng9IjMiIGZpbGw9IiNFRkU3RDQiLz4KICAgIDxjaXJjbGUgY3g9IjU4MCIgY3k9IjMwMCIgcj0iMjQiIGZpbGw9IiNCMjNCMkUiLz4KICAgIDxwYXRoIGQ9Ik01NzAgMjkwIGwyMCAyMCBNNTkwIDI5MCBsLTIwIDIwIiBzdHJva2U9IiNGQkYzRTQiIHN0cm9rZS13aWR0aD0iNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPC9nPgoKICA8IS0tIHJvZGFwZSBtZW5zYWdlbSAtLT4KICA8dGV4dCB4PSI0MDAiIHk9IjQwNSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjIwIiBmaWxsPSIjMTYyMTNBIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXdlaWdodD0iNzAwIj5CYXJyZWlyYXMgaW52aXPDrXZlaXMgcGFyYSBxdWVtIGVueGVyZ2EgYmVtPC90ZXh0Pgo8L3N2Zz4K" alt="Ilustração de uma janela de navegador com baixo contraste, mostrando um ícone de imagem quebrada, um parágrafo de texto apagado e um botão marcado com um X vermelho de bloqueado.">
+          </div>
+          <div class="topic-text">
+            <div class="icon" aria-hidden="true">02</div>
+            <h3>Barreiras que passam despercebidas</h3>
+            <p>Imagens sem texto alternativo, contrastes baixos, botões que só funcionam com o mouse e vídeos sem legenda são invisíveis para quem enxerga, ouve e clica sem dificuldade — mas viram paredes intransponíveis para quem depende de leitores de tela, teclado ou legendas para acompanhar o conteúdo.</p>
+          </div>
+        </div>
+
+        <div class="topic-row">
+          <div class="topic-media">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNjAwIj4KICA8cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgZmlsbD0iI0ZCRjNFNCIvPgogIDxjaXJjbGUgY3g9IjY0MCIgY3k9IjEyMCIgcj0iMTEwIiBmaWxsPSIjRjJFMkMwIi8+CiAgPGNpcmNsZSBjeD0iMTIwIiBjeT0iNDgwIiByPSI5MCIgZmlsbD0iI0RDRUFFNiIvPgoKICA8IS0tIGRlc2sgLS0+CiAgPHJlY3QgeD0iOTAiIHk9IjQyMCIgd2lkdGg9IjYyMCIgaGVpZ2h0PSIxOCIgcng9IjQiIGZpbGw9IiMxNjIxM0EiLz4KICA8cmVjdCB4PSIxMjAiIHk9IjQzOCIgd2lkdGg9IjIwIiBoZWlnaHQ9IjkwIiBmaWxsPSIjMTYyMTNBIi8+CiAgPHJlY3QgeD0iNjQwIiB5PSI0MzgiIHdpZHRoPSIyMCIgaGVpZ2h0PSI5MCIgZmlsbD0iIzE2MjEzQSIvPgoKICA8IS0tIGxhcHRvcCAtLT4KICA8cmVjdCB4PSIzMzAiIHk9IjMwMCIgd2lkdGg9IjI2MCIgaGVpZ2h0PSIxNTAiIHJ4PSIxMCIgZmlsbD0iIzE2MjEzQSIvPgogIDxyZWN0IHg9IjM0NSIgeT0iMzE0IiB3aWR0aD0iMjMwIiBoZWlnaHQ9IjExMiIgcng9IjQiIGZpbGw9IiMwRjUyNTciLz4KICA8cGF0aCBkPSJNMzAwIDQ1MCBMNjIwIDQ1MCBMNjAwIDQ3MiBMMzIwIDQ3MiBaIiBmaWxsPSIjMjMzMzUwIi8+CgogIDwhLS0gc291bmQgLyBzcGVlY2ggd2F2ZXMgZnJvbSBsYXB0b3AgLS0+CiAgPHBhdGggZD0iTTYwMCAzMzAgcTMwIDI1IDAgNTUiIHN0cm9rZT0iI0U4QTMzRCIgc3Ryb2tlLXdpZHRoPSI3IiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICA8cGF0aCBkPSJNNjIyIDMxNiBxNTUgNTUgMCAxMTAiIHN0cm9rZT0iI0U4QTMzRCIgc3Ryb2tlLXdpZHRoPSI3IiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiIG9wYWNpdHk9IjAuNyIvPgogIDxwYXRoIGQ9Ik02NDQgMzAwIHE4MCA4NSAwIDE1NSIgc3Ryb2tlPSIjRThBMzNEIiBzdHJva2Utd2lkdGg9IjciIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgb3BhY2l0eT0iMC40NSIvPgoKICA8IS0tIGJyYWlsbGUgZGlzcGxheSBiYXIgLS0+CiAgPHJlY3QgeD0iMzQ1IiB5PSIzNjAiIHdpZHRoPSIyMzAiIGhlaWdodD0iMzAiIHJ4PSI2IiBmaWxsPSIjRkJGM0U0Ii8+CiAgPGcgZmlsbD0iIzE2MjEzQSI+CiAgICA8Y2lyY2xlIGN4PSIzNjUiIGN5PSIzNjgiIHI9IjMiLz48Y2lyY2xlIGN4PSIzNjUiIGN5PSIzNzYiIHI9IjMiLz48Y2lyY2xlIGN4PSIzNjUiIGN5PSIzODQiIHI9IjMiLz4KICAgIDxjaXJjbGUgY3g9IjM3OCIgY3k9IjM2OCIgcj0iMyIvPjxjaXJjbGUgY3g9IjM3OCIgY3k9IjM4NCIgcj0iMyIvPgogICAgPGNpcmNsZSBjeD0iNDAwIiBjeT0iMzY4IiByPSIzIi8+PGNpcmNsZSBjeD0iNDAwIiBjeT0iMzc2IiByPSIzIi8+CiAgICA8Y2lyY2xlIGN4PSI0MTMiIGN5PSIzNzYiIHI9IjMiLz48Y2lyY2xlIGN4PSI0MTMiIGN5PSIzODQiIHI9IjMiLz4KICAgIDxjaXJjbGUgY3g9IjQzNSIgY3k9IjM2OCIgcj0iMyIvPjxjaXJjbGUgY3g9IjQzNSIgY3k9IjM3NiIgcj0iMyIvPjxjaXJjbGUgY3g9IjQzNSIgY3k9IjM4NCIgcj0iMyIvPgogICAgPGNpcmNsZSBjeD0iNDQ4IiBjeT0iMzY4IiByPSIzIi8+CiAgICA8Y2lyY2xlIGN4PSI0NzAiIGN5PSIzNzYiIHI9IjMiLz48Y2lyY2xlIGN4PSI0NzAiIGN5PSIzODQiIHI9IjMiLz4KICAgIDxjaXJjbGUgY3g9IjQ4MyIgY3k9IjM2OCIgcj0iMyIvPjxjaXJjbGUgY3g9IjQ4MyIgY3k9IjM4NCIgcj0iMyIvPgogICAgPGNpcmNsZSBjeD0iNTA1IiBjeT0iMzY4IiByPSIzIi8+PGNpcmNsZSBjeD0iNTA1IiBjeT0iMzc2IiByPSIzIi8+CiAgICA8Y2lyY2xlIGN4PSI1MTgiIGN5PSIzNzYiIHI9IjMiLz4KICAgIDxjaXJjbGUgY3g9IjU0MCIgY3k9IjM2OCIgcj0iMyIvPjxjaXJjbGUgY3g9IjU0MCIgY3k9IjM4NCIgcj0iMyIvPgogIDwvZz4KCiAgPCEtLSBwZXJzb24gLS0+CiAgPGc+CiAgICA8ZWxsaXBzZSBjeD0iMjMwIiBjeT0iNDcwIiByeD0iNzAiIHJ5PSIxNCIgZmlsbD0iIzE2MjEzQSIgb3BhY2l0eT0iMC4xMiIvPgogICAgPHJlY3QgeD0iMTg1IiB5PSIzMzAiIHdpZHRoPSI5MCIgaGVpZ2h0PSIxMjAiIHJ4PSIzMCIgZmlsbD0iIzBGNTI1NyIvPgogICAgPGNpcmNsZSBjeD0iMjMwIiBjeT0iMjkwIiByPSI0OCIgZmlsbD0iI0I5Nzg0RiIvPgogICAgPHBhdGggZD0iTTE4NSAyNzUgcTQ1IC01NSA5MCAwIHEwIC02MCAtOTAgLTU1IHEtMjUgMjAgMCA1NSBaIiBmaWxsPSIjM0EyNDE3Ii8+CiAgICA8IS0tIGhlYWRwaG9uZXMgLS0+CiAgICA8cGF0aCBkPSJNMTc4IDI4MCBxNTIgLTc4IDEwNCAwIiBzdHJva2U9IiMxNjIxM0EiIHN0cm9rZS13aWR0aD0iOCIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgICA8Y2lyY2xlIGN4PSIxNzgiIGN5PSIyODgiIHI9IjE2IiBmaWxsPSIjMTYyMTNBIi8+CiAgICA8Y2lyY2xlIGN4PSIyODIiIGN5PSIyODgiIHI9IjE2IiBmaWxsPSIjMTYyMTNBIi8+CiAgICA8IS0tIGFybSB0byBrZXlib2FyZCAtLT4KICAgIDxwYXRoIGQ9Ik0yNTUgMzYwIHE2MCAxMCA3NSAtMTAiIHN0cm9rZT0iI0I5Nzg0RiIgc3Ryb2tlLXdpZHRoPSIxNiIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPC9nPgoKICA8IS0tIGtleWJvYXJkIC0tPgogIDxyZWN0IHg9IjM0MCIgeT0iNDUyIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjQwIiByeD0iOCIgZmlsbD0iIzIzMzM1MCIvPgogIDxnIGZpbGw9IiNGQkYzRTQiIG9wYWNpdHk9IjAuODUiPgogICAgPHJlY3QgeD0iMzUyIiB5PSI0NjIiIHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCIgcng9IjMiLz4KICAgIDxyZWN0IHg9IjM3NiIgeT0iNDYyIiB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHJ4PSIzIi8+CiAgICA8cmVjdCB4PSI0MDAiIHk9IjQ2MiIgd2lkdGg9IjE4IiBoZWlnaHQ9IjE4IiByeD0iMyIvPgogICAgPHJlY3QgeD0iNDI0IiB5PSI0NjIiIHdpZHRoPSI4MCIgaGVpZ2h0PSIxOCIgcng9IjMiLz4KICA8L2c+Cjwvc3ZnPgo=" alt="Ilustração de uma pessoa usando fones de ouvido em frente a um notebook, acompanhando o conteúdo por um leitor de tela enquanto uma linha braille exibe o texto abaixo da janela do navegador.">
+          </div>
+          <div class="topic-text">
+            <div class="icon" aria-hidden="true">03</div>
+            <h3>Tecnologia assistiva no dia a dia</h3>
+            <p>Leitores de tela transformam texto em voz ou braille. Comandos de voz substituem o clique. Legendas e transcrições dão acesso equivalente a quem não ouve o áudio. Nenhuma dessas ferramentas funciona sozinha: elas dependem de um código bem estruturado por trás da tela.</p>
+          </div>
+        </div>
+
+        <div class="topic-row reverse">
+          <div class="topic-media">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNjAwIj4KICA8cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgZmlsbD0iI0ZCRjNFNCIvPgogIDxjaXJjbGUgY3g9IjEyMCIgY3k9IjEyMCIgcj0iOTAiIGZpbGw9IiNEQ0VBRTYiLz4KICA8Y2lyY2xlIGN4PSI2ODAiIGN5PSI0OTAiIHI9IjEwMCIgZmlsbD0iI0YyRTJDMCIvPgoKICA8IS0tIElBOiBjaGlwIGNvbSBmYWlzY2FzIC0tPgogIDxnPgogICAgPHJlY3QgeD0iMTIwIiB5PSIyMjAiIHdpZHRoPSIxNTAiIGhlaWdodD0iMTUwIiByeD0iMjQiIGZpbGw9IiMwRjUyNTciLz4KICAgIDxyZWN0IHg9IjE1OCIgeT0iMjU4IiB3aWR0aD0iNzQiIGhlaWdodD0iNzQiIHJ4PSIxMiIgZmlsbD0iI0ZCRjNFNCIvPgogICAgPGNpcmNsZSBjeD0iMTc4IiBjeT0iMjc4IiByPSI2IiBmaWxsPSIjMEY1MjU3Ii8+CiAgICA8Y2lyY2xlIGN4PSIyMTIiIGN5PSIyNzgiIHI9IjYiIGZpbGw9IiMwRjUyNTciLz4KICAgIDxwYXRoIGQ9Ik0xNzIgMzA2IHEyMyAxNiA0NiAwIiBzdHJva2U9IiMwRjUyNTciIHN0cm9rZS13aWR0aD0iNSIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgICA8cGF0aCBkPSJNMTk1IDIwMCBsOCAyMCBsMjAgOCBsLTIwIDggbC04IDIwIGwtOCAtMjAgbC0yMCAtOCBsMjAgLTggWiIgZmlsbD0iI0U4QTMzRCIvPgogICAgPHBhdGggZD0iTTI3MCAyNDAgbDYgMTQgbDE0IDYgbC0xNCA2IGwtNiAxNCBsLTYgLTE0IGwtMTQgLTYgbDE0IC02IFoiIGZpbGw9IiNFOEEzM0QiIG9wYWNpdHk9IjAuODUiLz4KICA8L2c+CgogIDwhLS0gcmFzY3VuaG8gc2FpbmRvIGRhIElBIC0tPgogIDxyZWN0IHg9IjMwMCIgeT0iMjUwIiB3aWR0aD0iMTUwIiBoZWlnaHQ9IjExMCIgcng9IjEwIiBmaWxsPSIjRjJFMkMwIi8+CiAgPHJlY3QgeD0iMzE2IiB5PSIyNjYiIHdpZHRoPSIxMTgiIGhlaWdodD0iMTAiIHJ4PSIzIiBmaWxsPSIjQzlBOTZCIi8+CiAgPHJlY3QgeD0iMzE2IiB5PSIyODQiIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAiIHJ4PSIzIiBmaWxsPSIjQzlBOTZCIi8+CiAgPHJlY3QgeD0iMzE2IiB5PSIzMDIiIHdpZHRoPSIxMTAiIGhlaWdodD0iMTAiIHJ4PSIzIiBmaWxsPSIjQzlBOTZCIi8+CiAgPHJlY3QgeD0iMzE2IiB5PSIzMjAiIHdpZHRoPSI3MCIgaGVpZ2h0PSIxMCIgcng9IjMiIGZpbGw9IiNDOUE5NkIiLz4KICA8cGF0aCBkPSJNMjcwIDMwMCBMMzAwIDMwMCIgc3Ryb2tlPSIjMTYyMTNBIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZS1kYXNoYXJyYXk9IjIgOCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBvcGFjaXR5PSIwLjUiLz4KCiAgPCEtLSBzZXRhIHBhcmEgcmV2aXPDo28gLS0+CiAgPHBhdGggZD0iTTQ1NiAzMDUgTDUyMCAzMDUiIHN0cm9rZT0iIzE2MjEzQSIgc3Ryb2tlLXdpZHRoPSI0IiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICA8cGF0aCBkPSJNNTA4IDI5MyBMNTI0IDMwNSBMNTA4IDMxNyIgc3Ryb2tlPSIjMTYyMTNBIiBzdHJva2Utd2lkdGg9IjQiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgoKICA8IS0tIHBlc3NvYSByZXZpc2FuZG8sIGNvbSBsdXBhIGUgY2hlY2sgLS0+CiAgPGc+CiAgICA8cmVjdCB4PSI1NjAiIHk9IjI0MCIgd2lkdGg9IjE1MCIgaGVpZ2h0PSIxNTAiIHJ4PSIyNCIgZmlsbD0iI0U4QTMzRCIvPgogICAgPGNpcmNsZSBjeD0iNjM1IiBjeT0iMzAwIiByPSIzNCIgZmlsbD0iI0I5Nzg0RiIvPgogICAgPGNpcmNsZSBjeD0iNjM1IiBjeT0iMjg4IiByPSIxMiIgZmlsbD0iI0ZCRjNFNCIvPgogICAgPHBhdGggZD0iTTYxNyAzMTggcTE4IC0xNCAzNiAwIiBzdHJva2U9IiNGQkYzRTQiIHN0cm9rZS13aWR0aD0iNiIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgICA8IS0tIGx1cGEgLS0+CiAgICA8Y2lyY2xlIGN4PSI2OTAiIGN5PSIzNTAiIHI9IjE4IiBmaWxsPSJub25lIiBzdHJva2U9IiMxNjIxM0EiIHN0cm9rZS13aWR0aD0iNiIvPgogICAgPHBhdGggZD0iTTcwMiAzNjIgbDE2IDE2IiBzdHJva2U9IiMxNjIxM0EiIHN0cm9rZS13aWR0aD0iNiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPC9nPgoKICA8IS0tIGNoZWNrIGRlIGFwcm92YWRvIC0tPgogIDxjaXJjbGUgY3g9IjcwMCIgY3k9IjIzMCIgcj0iMjYiIGZpbGw9IiMwRjUyNTciLz4KICA8cGF0aCBkPSJNNjg4IDIzMCBsOSA5IGwxNiAtMTgiIHN0cm9rZT0iI0ZCRjNFNCIgc3Ryb2tlLXdpZHRoPSI2IiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KCiAgPHRleHQgeD0iNDAwIiB5PSI0NzAiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyMCIgZmlsbD0iIzE2MjEzQSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC13ZWlnaHQ9IjcwMCI+SUEgZ2VyYSBvIHJhc2N1bmhvIOKAlCBhIGVxdWlwZSByZXZpc2EgZSBhcHJvdmE8L3RleHQ+Cjwvc3ZnPgo=" alt="Ilustração de um chip de inteligência artificial gerando um rascunho de texto, com uma seta apontando para uma pessoa revisando o conteúdo com uma lupa e um selo de aprovado ao lado.">
+          </div>
+          <div class="topic-text">
+            <div class="icon" aria-hidden="true">04</div>
+            <h3>Inteligência artificial: apoio, não substituição</h3>
+            <p>A IA pode gerar rascunhos de texto, roteiros e até narrações — mas não sabe, sozinha, o que é respeitoso ou preciso para cada público. Cabe à equipe revisar cada saída, corrigir estereótipos e garantir que a informação está correta antes de publicar.</p>
+          </div>
+        </div>
+      </div>
+
+      <h3 style="margin-top:44px; font-size:1.15rem;">Boas práticas rápidas para quem está começando</h3>
+      <ul class="checklist">
+        <li>Toda imagem informativa tem um <code>alt</code> objetivo, descrevendo sua função no contexto da página.</li>
+        <li>O contraste entre texto e fundo é alto o suficiente para ser lido com luz do sol na tela.</li>
+        <li>A página inteira pode ser navegada só com o teclado, na ordem em que o conteúdo aparece.</li>
+        <li>Vídeos e podcasts vêm acompanhados de transcrição completa, não só um resumo.</li>
+        <li><code>aria-label</code> e outros atributos ARIA só entram quando o HTML nativo não basta.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 3. GALERIA -->
+  <section aria-labelledby="galeria-titulo">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Galeria</p>
+        <h2 id="galeria-titulo">Acessibilidade em cena</h2>
+        <p>Três ilustrações produzidas para este projeto, mostrando tecnologia assistiva em uso — cada uma com um texto alternativo que descreve a cena para quem usa leitor de tela.</p>
+      </div>
+      <div class="gallery">
+        <figure class="gal">
+          <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNjAwIj4KICA8cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgZmlsbD0iI0ZCRjNFNCIvPgogIDxjaXJjbGUgY3g9IjY0MCIgY3k9IjEyMCIgcj0iMTEwIiBmaWxsPSIjRjJFMkMwIi8+CiAgPGNpcmNsZSBjeD0iMTIwIiBjeT0iNDgwIiByPSI5MCIgZmlsbD0iI0RDRUFFNiIvPgoKICA8IS0tIGRlc2sgLS0+CiAgPHJlY3QgeD0iOTAiIHk9IjQyMCIgd2lkdGg9IjYyMCIgaGVpZ2h0PSIxOCIgcng9IjQiIGZpbGw9IiMxNjIxM0EiLz4KICA8cmVjdCB4PSIxMjAiIHk9IjQzOCIgd2lkdGg9IjIwIiBoZWlnaHQ9IjkwIiBmaWxsPSIjMTYyMTNBIi8+CiAgPHJlY3QgeD0iNjQwIiB5PSI0MzgiIHdpZHRoPSIyMCIgaGVpZ2h0PSI5MCIgZmlsbD0iIzE2MjEzQSIvPgoKICA8IS0tIGxhcHRvcCAtLT4KICA8cmVjdCB4PSIzMzAiIHk9IjMwMCIgd2lkdGg9IjI2MCIgaGVpZ2h0PSIxNTAiIHJ4PSIxMCIgZmlsbD0iIzE2MjEzQSIvPgogIDxyZWN0IHg9IjM0NSIgeT0iMzE0IiB3aWR0aD0iMjMwIiBoZWlnaHQ9IjExMiIgcng9IjQiIGZpbGw9IiMwRjUyNTciLz4KICA8cGF0aCBkPSJNMzAwIDQ1MCBMNjIwIDQ1MCBMNjAwIDQ3MiBMMzIwIDQ3MiBaIiBmaWxsPSIjMjMzMzUwIi8+CgogIDwhLS0gc291bmQgLyBzcGVlY2ggd2F2ZXMgZnJvbSBsYXB0b3AgLS0+CiAgPHBhdGggZD0iTTYwMCAzMzAgcTMwIDI1IDAgNTUiIHN0cm9rZT0iI0U4QTMzRCIgc3Ryb2tlLXdpZHRoPSI3IiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICA8cGF0aCBkPSJNNjIyIDMxNiBxNTUgNTUgMCAxMTAiIHN0cm9rZT0iI0U4QTMzRCIgc3Ryb2tlLXdpZHRoPSI3IiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiIG9wYWNpdHk9IjAuNyIvPgogIDxwYXRoIGQ9Ik02NDQgMzAwIHE4MCA4NSAwIDE1NSIgc3Ryb2tlPSIjRThBMzNEIiBzdHJva2Utd2lkdGg9IjciIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgb3BhY2l0eT0iMC40NSIvPgoKICA8IS0tIGJyYWlsbGUgZGlzcGxheSBiYXIgLS0+CiAgPHJlY3QgeD0iMzQ1IiB5PSIzNjAiIHdpZHRoPSIyMzAiIGhlaWdodD0iMzAiIHJ4PSI2IiBmaWxsPSIjRkJGM0U0Ii8+CiAgPGcgZmlsbD0iIzE2MjEzQSI+CiAgICA8Y2lyY2xlIGN4PSIzNjUiIGN5PSIzNjgiIHI9IjMiLz48Y2lyY2xlIGN4PSIzNjUiIGN5PSIzNzYiIHI9IjMiLz48Y2lyY2xlIGN4PSIzNjUiIGN5PSIzODQiIHI9IjMiLz4KICAgIDxjaXJjbGUgY3g9IjM3OCIgY3k9IjM2OCIgcj0iMyIvPjxjaXJjbGUgY3g9IjM3OCIgY3k9IjM4NCIgcj0iMyIvPgogICAgPGNpcmNsZSBjeD0iNDAwIiBjeT0iMzY4IiByPSIzIi8+PGNpcmNsZSBjeD0iNDAwIiBjeT0iMzc2IiByPSIzIi8+CiAgICA8Y2lyY2xlIGN4PSI0MTMiIGN5PSIzNzYiIHI9IjMiLz48Y2lyY2xlIGN4PSI0MTMiIGN5PSIzODQiIHI9IjMiLz4KICAgIDxjaXJjbGUgY3g9IjQzNSIgY3k9IjM2OCIgcj0iMyIvPjxjaXJjbGUgY3g9IjQzNSIgY3k9IjM3NiIgcj0iMyIvPjxjaXJjbGUgY3g9IjQzNSIgY3k9IjM4NCIgcj0iMyIvPgogICAgPGNpcmNsZSBjeD0iNDQ4IiBjeT0iMzY4IiByPSIzIi8+CiAgICA8Y2lyY2xlIGN4PSI0NzAiIGN5PSIzNzYiIHI9IjMiLz48Y2lyY2xlIGN4PSI0NzAiIGN5PSIzODQiIHI9IjMiLz4KICAgIDxjaXJjbGUgY3g9IjQ4MyIgY3k9IjM2OCIgcj0iMyIvPjxjaXJjbGUgY3g9IjQ4MyIgY3k9IjM4NCIgcj0iMyIvPgogICAgPGNpcmNsZSBjeD0iNTA1IiBjeT0iMzY4IiByPSIzIi8+PGNpcmNsZSBjeD0iNTA1IiBjeT0iMzc2IiByPSIzIi8+CiAgICA8Y2lyY2xlIGN4PSI1MTgiIGN5PSIzNzYiIHI9IjMiLz4KICAgIDxjaXJjbGUgY3g9IjU0MCIgY3k9IjM2OCIgcj0iMyIvPjxjaXJjbGUgY3g9IjU0MCIgY3k9IjM4NCIgcj0iMyIvPgogIDwvZz4KCiAgPCEtLSBwZXJzb24gLS0+CiAgPGc+CiAgICA8ZWxsaXBzZSBjeD0iMjMwIiBjeT0iNDcwIiByeD0iNzAiIHJ5PSIxNCIgZmlsbD0iIzE2MjEzQSIgb3BhY2l0eT0iMC4xMiIvPgogICAgPHJlY3QgeD0iMTg1IiB5PSIzMzAiIHdpZHRoPSI5MCIgaGVpZ2h0PSIxMjAiIHJ4PSIzMCIgZmlsbD0iIzBGNTI1NyIvPgogICAgPGNpcmNsZSBjeD0iMjMwIiBjeT0iMjkwIiByPSI0OCIgZmlsbD0iI0I5Nzg0RiIvPgogICAgPHBhdGggZD0iTTE4NSAyNzUgcTQ1IC01NSA5MCAwIHEwIC02MCAtOTAgLTU1IHEtMjUgMjAgMCA1NSBaIiBmaWxsPSIjM0EyNDE3Ii8+CiAgICA8IS0tIGhlYWRwaG9uZXMgLS0+CiAgICA8cGF0aCBkPSJNMTc4IDI4MCBxNTIgLTc4IDEwNCAwIiBzdHJva2U9IiMxNjIxM0EiIHN0cm9rZS13aWR0aD0iOCIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgICA8Y2lyY2xlIGN4PSIxNzgiIGN5PSIyODgiIHI9IjE2IiBmaWxsPSIjMTYyMTNBIi8+CiAgICA8Y2lyY2xlIGN4PSIyODIiIGN5PSIyODgiIHI9IjE2IiBmaWxsPSIjMTYyMTNBIi8+CiAgICA8IS0tIGFybSB0byBrZXlib2FyZCAtLT4KICAgIDxwYXRoIGQ9Ik0yNTUgMzYwIHE2MCAxMCA3NSAtMTAiIHN0cm9rZT0iI0I5Nzg0RiIgc3Ryb2tlLXdpZHRoPSIxNiIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPC9nPgoKICA8IS0tIGtleWJvYXJkIC0tPgogIDxyZWN0IHg9IjM0MCIgeT0iNDUyIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjQwIiByeD0iOCIgZmlsbD0iIzIzMzM1MCIvPgogIDxnIGZpbGw9IiNGQkYzRTQiIG9wYWNpdHk9IjAuODUiPgogICAgPHJlY3QgeD0iMzUyIiB5PSI0NjIiIHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCIgcng9IjMiLz4KICAgIDxyZWN0IHg9IjM3NiIgeT0iNDYyIiB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHJ4PSIzIi8+CiAgICA8cmVjdCB4PSI0MDAiIHk9IjQ2MiIgd2lkdGg9IjE4IiBoZWlnaHQ9IjE4IiByeD0iMyIvPgogICAgPHJlY3QgeD0iNDI0IiB5PSI0NjIiIHdpZHRoPSI4MCIgaGVpZ2h0PSIxOCIgcng9IjMiLz4KICA8L2c+Cjwvc3ZnPgo=" alt="Ilustração de uma pessoa usando fones de ouvido em frente a um notebook, acompanhando o conteúdo por um leitor de tela enquanto uma linha braille exibe o texto abaixo da janela do navegador.">
+          <figcaption><strong>Leitura de tela</strong>O leitor de tela converte o texto da página em áudio e, junto com uma linha braille, permite acompanhar o conteúdo sem depender da visão.</figcaption>
+        </figure>
+        <figure class="gal">
+          <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNjAwIj4KICA8cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgZmlsbD0iI0ZCRjNFNCIvPgogIDxjaXJjbGUgY3g9IjcwMCIgY3k9IjQ3MCIgcj0iMTIwIiBmaWxsPSIjRjJFMkMwIi8+CiAgPGNpcmNsZSBjeD0iNzAiIGN5PSI5MCIgcj0iODAiIGZpbGw9IiNEQ0VBRTYiLz4KCiAgPCEtLSBicm93c2VyIHdpbmRvdyAtLT4KICA8cmVjdCB4PSIxNDAiIHk9IjcwIiB3aWR0aD0iNTIwIiBoZWlnaHQ9IjMwMCIgcng9IjE0IiBmaWxsPSIjMTYyMTNBIi8+CiAgPHJlY3QgeD0iMTQwIiB5PSI3MCIgd2lkdGg9IjUyMCIgaGVpZ2h0PSIzNCIgcng9IjE0IiBmaWxsPSIjMjMzMzUwIi8+CiAgPGNpcmNsZSBjeD0iMTY0IiBjeT0iODciIHI9IjYiIGZpbGw9IiNFOEEzM0QiLz4KICA8Y2lyY2xlIGN4PSIxODQiIGN5PSI4NyIgcj0iNiIgZmlsbD0iIzBGNTI1NyIvPgogIDxjaXJjbGUgY3g9IjIwNCIgY3k9Ijg3IiByPSI2IiBmaWxsPSIjRkJGM0U0Ii8+CiAgPHJlY3QgeD0iMTYwIiB5PSIxMjQiIHdpZHRoPSI0ODAiIGhlaWdodD0iMjIyIiBmaWxsPSIjRkJGM0U0Ii8+CgogIDwhLS0gbmF2IGJhciB3aXRoIGZvY3VzIHJpbmcgLS0+CiAgPHJlY3QgeD0iMTgwIiB5PSIxNDQiIHdpZHRoPSI5MCIgaGVpZ2h0PSIyNiIgcng9IjYiIGZpbGw9IiMwRjUyNTciLz4KICA8cmVjdCB4PSIyODAiIHk9IjE0NCIgd2lkdGg9IjkwIiBoZWlnaHQ9IjI2IiByeD0iNiIgZmlsbD0iI0RDRUFFNiIvPgogIDxyZWN0IHg9IjM4MCIgeT0iMTQ0IiB3aWR0aD0iOTAiIGhlaWdodD0iMjYiIHJ4PSI2IiBmaWxsPSIjRENFQUU2Ii8+CiAgPHJlY3QgeD0iMTc2IiB5PSIxNDAiIHdpZHRoPSI5OCIgaGVpZ2h0PSIzNCIgcng9IjgiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0U4QTMzRCIgc3Ryb2tlLXdpZHRoPSI0Ii8+CgogIDwhLS0gYm9keSBsaW5lcyAtLT4KICA8cmVjdCB4PSIxODAiIHk9IjE5NiIgd2lkdGg9IjMwMCIgaGVpZ2h0PSIxNCIgcng9IjQiIGZpbGw9IiMxNjIxM0EiIG9wYWNpdHk9IjAuNzUiLz4KICA8cmVjdCB4PSIxODAiIHk9IjIyMCIgd2lkdGg9IjQyMCIgaGVpZ2h0PSIxMCIgcng9IjQiIGZpbGw9IiMxNjIxM0EiIG9wYWNpdHk9IjAuMyIvPgogIDxyZWN0IHg9IjE4MCIgeT0iMjM4IiB3aWR0aD0iNDIwIiBoZWlnaHQ9IjEwIiByeD0iNCIgZmlsbD0iIzE2MjEzQSIgb3BhY2l0eT0iMC4zIi8+CiAgPHJlY3QgeD0iMTgwIiB5PSIyNTYiIHdpZHRoPSIyNjAiIGhlaWdodD0iMTAiIHJ4PSI0IiBmaWxsPSIjMTYyMTNBIiBvcGFjaXR5PSIwLjMiLz4KCiAgPCEtLSBidXR0b24gd2l0aCBmb2N1cyBwYXRoIGFycm93IC0tPgogIDxyZWN0IHg9IjE4MCIgeT0iMjkwIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjM4IiByeD0iOCIgZmlsbD0iIzBGNTI1NyIvPgogIDxyZWN0IHg9IjE3NiIgeT0iMjg2IiB3aWR0aD0iMTQ4IiBoZWlnaHQ9IjQ2IiByeD0iMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0U4QTMzRCIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2UtZGFzaGFycmF5PSIyIDgiLz4KICA8cGF0aCBkPSJNMjcwIDE3MiBDIDMyMCAyMjAsIDIwMCAyNTAsIDI1MCAyODgiIHN0cm9rZT0iI0U4QTMzRCIgc3Ryb2tlLXdpZHRoPSI0IiBmaWxsPSJub25lIiBzdHJva2UtZGFzaGFycmF5PSIxIDEwIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KCiAgPCEtLSBrZXlib2FyZCAtLT4KICA8Zz4KICAgIDxyZWN0IHg9IjIyMCIgeT0iNDIwIiB3aWR0aD0iMzYwIiBoZWlnaHQ9IjEzMCIgcng9IjE2IiBmaWxsPSIjMTYyMTNBIi8+CiAgICA8cmVjdCB4PSIyMzgiIHk9IjQzNiIgd2lkdGg9IjYwIiBoZWlnaHQ9IjM0IiByeD0iNiIgZmlsbD0iI0U4QTMzRCIvPgogICAgPHRleHQgeD0iMjY4IiB5PSI0NTkiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgZmlsbD0iIzE2MjEzQSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC13ZWlnaHQ9IjcwMCI+VGFiPC90ZXh0PgogICAgPGcgZmlsbD0iI0ZCRjNFNCIgb3BhY2l0eT0iMC45Ij4KICAgICAgPHJlY3QgeD0iMzEwIiB5PSI0MzYiIHdpZHRoPSIzNCIgaGVpZ2h0PSIzNCIgcng9IjYiLz4KICAgICAgPHJlY3QgeD0iMzUyIiB5PSI0MzYiIHdpZHRoPSIzNCIgaGVpZ2h0PSIzNCIgcng9IjYiLz4KICAgICAgPHJlY3QgeD0iMzk0IiB5PSI0MzYiIHdpZHRoPSIzNCIgaGVpZ2h0PSIzNCIgcng9IjYiLz4KICAgICAgPHJlY3QgeD0iNDM2IiB5PSI0MzYiIHdpZHRoPSIzNCIgaGVpZ2h0PSIzNCIgcng9IjYiLz4KICAgICAgPHJlY3QgeD0iNDc4IiB5PSI0MzYiIHdpZHRoPSIzNCIgaGVpZ2h0PSIzNCIgcng9IjYiLz4KICAgICAgPHJlY3QgeD0iNTIwIiB5PSI0MzYiIHdpZHRoPSIzNCIgaGVpZ2h0PSIzNCIgcng9IjYiLz4KICAgICAgPHJlY3QgeD0iMjM4IiB5PSI0ODAiIHdpZHRoPSIzNCIgaGVpZ2h0PSIzNCIgcng9IjYiLz4KICAgICAgPHJlY3QgeD0iMjgwIiB5PSI0ODAiIHdpZHRoPSIzNCIgaGVpZ2h0PSIzNCIgcng9IjYiLz4KICAgICAgPHJlY3QgeD0iMzIyIiB5PSI0ODAiIHdpZHRoPSIzNCIgaGVpZ2h0PSIzNCIgcng9IjYiLz4KICAgICAgPHJlY3QgeD0iMzY0IiB5PSI0ODAiIHdpZHRoPSIzNCIgaGVpZ2h0PSIzNCIgcng9IjYiLz4KICAgICAgPHJlY3QgeD0iNDA2IiB5PSI0ODAiIHdpZHRoPSIzNCIgaGVpZ2h0PSIzNCIgcng9IjYiLz4KICAgICAgPHJlY3QgeD0iNDQ4IiB5PSI0ODAiIHdpZHRoPSIzNCIgaGVpZ2h0PSIzNCIgcng9IjYiLz4KICAgICAgPHJlY3QgeD0iNDkwIiB5PSI0ODAiIHdpZHRoPSI2NCIgaGVpZ2h0PSIzNCIgcng9IjYiLz4KICAgIDwvZz4KICA8L2c+Cjwvc3ZnPgo=" alt="Ilustração de uma tela de navegador com um anel de foco laranja pontilhado destacando um link, ligado por uma linha tracejada a um botão em foco, sobre um teclado com a tecla Tab em destaque.">
+          <figcaption><strong>Navegação por teclado</strong>Sem usar o mouse, a tecla Tab move o foco entre links e botões — e um contorno visível mostra onde ele está a cada momento.</figcaption>
+        </figure>
+        <figure class="gal">
+          <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNjAwIj4KICA8cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgZmlsbD0iI0ZCRjNFNCIvPgogIDxjaXJjbGUgY3g9IjEyMCIgY3k9IjEzMCIgcj0iMTAwIiBmaWxsPSIjRENFQUU2Ii8+CiAgPGNpcmNsZSBjeD0iNjgwIiBjeT0iNTAwIiByPSI5MCIgZmlsbD0iI0YyRTJDMCIvPgoKICA8IS0tIHNjcmVlbiAtLT4KICA8cmVjdCB4PSIyMTAiIHk9IjkwIiB3aWR0aD0iNDQwIiBoZWlnaHQ9IjI3MCIgcng9IjE0IiBmaWxsPSIjMTYyMTNBIi8+CiAgPHJlY3QgeD0iMjI4IiB5PSIxMDgiIHdpZHRoPSI0MDQiIGhlaWdodD0iMjA0IiByeD0iNiIgZmlsbD0iIzBGNTI1NyIvPgogIDxwYXRoIGQ9Ik0zMDAgMjEwIGw0MCAtNTAgbDYwIDcwIGw0MCAtNDAgbDcwIDYwIiBzdHJva2U9IiNGQkYzRTQiIHN0cm9rZS13aWR0aD0iNiIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBvcGFjaXR5PSIwLjYiLz4KCiAgPCEtLSBjYXB0aW9ucyBiYXIgLS0+CiAgPHJlY3QgeD0iMjI4IiB5PSIzMjIiIHdpZHRoPSI0MDQiIGhlaWdodD0iMzAiIHJ4PSI2IiBmaWxsPSIjMTYyMTNBIi8+CiAgPHJlY3QgeD0iMjQ0IiB5PSIzMzEiIHdpZHRoPSIxODAiIGhlaWdodD0iMTAiIHJ4PSIzIiBmaWxsPSIjRkJGM0U0Ii8+CiAgPHJlY3QgeD0iNDM0IiB5PSIzMzEiIHdpZHRoPSIxNTAiIGhlaWdodD0iMTAiIHJ4PSIzIiBmaWxsPSIjRkJGM0U0IiBvcGFjaXR5PSIwLjYiLz4KCiAgPCEtLSBzaWduIGxhbmd1YWdlIGluc2V0IGNpcmNsZSAtLT4KICA8Y2lyY2xlIGN4PSI2MDAiIGN5PSIxNTAiIHI9IjU4IiBmaWxsPSIjRkJGM0U0IiBzdHJva2U9IiNFOEEzM0QiIHN0cm9rZS13aWR0aD0iNiIvPgogIDxjaXJjbGUgY3g9IjYwMCIgY3k9IjEzMiIgcj0iMTYiIGZpbGw9IiM4QjVFM0MiLz4KICA8cGF0aCBkPSJNNTc4IDE5MCBxMjIgLTMwIDQ0IDAiIHN0cm9rZT0iIzhCNUUzQyIgc3Ryb2tlLXdpZHRoPSIxNCIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPHBhdGggZD0iTTU2NiAxNTAgbDE0IC0zNCIgc3Ryb2tlPSIjOEI1RTNDIiBzdHJva2Utd2lkdGg9IjkiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDxwYXRoIGQ9Ik02MzQgMTUwIGwtMTAgLTM2IiBzdHJva2U9IiM4QjVFM0MiIHN0cm9rZS13aWR0aD0iOSIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CgogIDwhLS0gdHdvIHZpZXdlcnMsIGRpZmZlcmVudCBhZ2VzIC0tPgogIDxnPgogICAgPGVsbGlwc2UgY3g9IjMzMCIgY3k9IjUyMCIgcng9IjE1MCIgcnk9IjE2IiBmaWxsPSIjMTYyMTNBIiBvcGFjaXR5PSIwLjEiLz4KICAgIDwhLS0geW91bmdlciB2aWV3ZXIgLS0+CiAgICA8cmVjdCB4PSIyNTUiIHk9IjQxMCIgd2lkdGg9IjgwIiBoZWlnaHQ9IjExMCIgcng9IjI2IiBmaWxsPSIjRThBMzNEIi8+CiAgICA8Y2lyY2xlIGN4PSIyOTUiIGN5PSIzOTIiIHI9IjQwIiBmaWxsPSIjRjJDOUEwIi8+CiAgICA8cGF0aCBkPSJNMjU1IDM4OCBxNDAgLTUwIDgwIDAgcTAgLTQ2IC04MCAtNDAgcS0xNiAxOCAwIDQwIFoiIGZpbGw9IiM1QTNBMjIiLz4KCiAgICA8IS0tIG9sZGVyIHZpZXdlciB3aXRoIGNhbmUtZnJlZSB3YWxraW5nIHN0eWxlLCBncmV5IGhhaXIgLS0+CiAgICA8cmVjdCB4PSIzNjUiIHk9IjQwMCIgd2lkdGg9IjkwIiBoZWlnaHQ9IjEyMCIgcng9IjI4IiBmaWxsPSIjMEY1MjU3Ii8+CiAgICA8Y2lyY2xlIGN4PSI0MTAiIGN5PSIzODAiIHI9IjQyIiBmaWxsPSIjRDk4RTczIi8+CiAgICA8cGF0aCBkPSJNMzY4IDM3MiBxNDIgLTQ4IDg0IDAiIHN0cm9rZT0iI0Q5RDJDNCIgc3Ryb2tlLXdpZHRoPSIxNCIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPC9nPgo8L3N2Zz4K" alt="Ilustração de duas pessoas de idades diferentes assistindo juntas a um vídeo com legendas na parte inferior da tela e um círculo com a interpretação em Libras no canto superior direito.">
+          <figcaption><strong>Legendas e Libras</strong>Legendas sincronizadas e interpretação em Libras dão acesso ao mesmo conteúdo para quem não ouve o áudio original.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 e 5. MÍDIAS: vídeo e podcast -->
+  <section id="midias" aria-labelledby="midias-titulo">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Mídias</p>
+        <h2 id="midias-titulo">Vídeo e podcast do projeto</h2>
+        <p>Os dois materiais abaixo foram roteirizados com apoio de IA e revisados pela equipe. Cada player vem acompanhado de um accordion nativo com a transcrição completa.</p>
+      </div>
+
+      <!-- VÍDEO -->
+      <article class="media-block" aria-labelledby="video-titulo">
+        <div class="media-head">
+          <span class="emoji-badge" aria-hidden="true">▶</span>
+          <h3 id="video-titulo">Vídeo — Acessibilidade em três minutos</h3>
+        </div>
+        <div class="player-shell">
+          <!--
+            Substitua o bloco abaixo pelo vídeo real da equipe.
+            Exemplo: <video controls poster="capa.jpg"><source src="video.mp4" type="video/mp4"></video>
+          -->
+          <video class="native-media" controls preload="none" aria-label="Player de vídeo: Acessibilidade em três minutos (arquivo a ser substituído pela equipe)">
+            Seu navegador não é compatível com a reprodução de vídeo nativa.
+          </video>
+          <p class="media-note">Espaço reservado para o vídeo final. Grave ou gere o material com apoio de IA e substitua a tag <code>&lt;video&gt;</code> por um arquivo real (ex.: <code>src="video.mp4"</code>).</p>
+        </div>
+        <details class="transcript">
+          <summary>Ler transcrição completa do vídeo</summary>
+          <div class="conteudo-transcricao">
+            <p class="fala"><strong>Narração:</strong> Imagine abrir um site e não conseguir enxergar as imagens, não conseguir ouvir o áudio ou não conseguir clicar com precisão no botão certo. Para milhões de pessoas, essa não é uma hipótese — é a rotina de todos os dias.</p>
+            <p class="visual-desc">[Descrição visual] A tela mostra um cursor tentando clicar em um botão pequeno e escorregando; em seguida, o mesmo botão aparece maior, com uma borda de foco visível.</p>
+            <p class="fala"><strong>Narração:</strong> Acessibilidade digital é o conjunto de escolhas que evita que isso aconteça: textos alternativos em imagens, contraste suficiente entre texto e fundo, navegação completa pelo teclado e legendas em vídeos.</p>
+            <p class="visual-desc">[Descrição visual] Uma pessoa navega por um site inteiramente pelo teclado; o foco visível (um contorno laranja) salta de link em link até chegar ao menu principal.</p>
+            <p class="fala"><strong>Narração:</strong> A inteligência artificial pode ajudar a produzir roteiros, imagens e narrações mais rápido, mas a responsabilidade de garantir que o conteúdo é correto, respeitoso e realmente acessível continua sendo humana.</p>
+            <p class="visual-desc">[Descrição visual] Um roteiro de texto se transforma, em animação, em cenas de vídeo; ao lado, um ícone de "revisão humana" aparece com um sinal de certo.</p>
+            <p class="fala"><strong>Narração:</strong> Tecnologia para todos não é um slogan — é um compromisso que começa em cada linha de código.</p>
+          </div>
+        </details>
+      </article>
+
+      <!-- PODCAST -->
+      <article class="media-block" aria-labelledby="podcast-titulo">
+        <div class="media-head">
+          <span class="emoji-badge" aria-hidden="true">♪</span>
+          <h3 id="podcast-titulo">Podcast — Conversas sobre inclusão digital</h3>
+        </div>
+        <div class="player-shell">
+          <div class="player-visual">
+            <span class="playbtn" aria-hidden="true">▶</span>
+            <span class="label">Episódio 1 · 8 min · Acessa+</span>
+          </div>
+          <!--
+            Substitua o bloco abaixo pelo áudio real da equipe.
+            Exemplo: <audio controls><source src="podcast.mp3" type="audio/mpeg"></audio>
+          -->
+          <audio class="native-media" controls preload="none" aria-label="Player de podcast: Conversas sobre inclusão digital (arquivo a ser substituído pela equipe)" style="background:var(--paper-raised);">
+            Seu navegador não é compatível com a reprodução de áudio nativa.
+          </audio>
+          <p class="media-note">Espaço reservado para o episódio final. Estruture o roteiro com IA, revise o texto e gere a narração antes de publicar o arquivo de áudio real.</p>
+        </div>
+        <details class="transcript">
+          <summary>Ler transcrição completa do podcast</summary>
+          <div class="conteudo-transcricao">
+            <p class="fala"><strong>Apresentadora:</strong> Hoje vamos conversar sobre como pequenas decisões de desenvolvimento removem barreiras. Comigo está a convidada de hoje. Seja bem-vinda!</p>
+            <p class="fala"><strong>Convidada:</strong> Obrigada pelo convite! Eu costumo dizer que acessibilidade começa antes do design — começa na estrutura semântica do HTML. Quando você usa <code>header</code>, <code>nav</code>, <code>main</code> e <code>footer</code> do jeito certo, um leitor de tela já entende a página muito melhor.</p>
+            <p class="fala"><strong>Apresentadora:</strong> E quando esse cuidado falta, o que acontece na prática?</p>
+            <p class="fala"><strong>Convidada:</strong> A pessoa perde a orientação. Sem marcação semântica, tudo vira uma lista solta de textos e botões, sem hierarquia. É como entrar em uma loja sem placas: você sabe que os produtos estão ali, mas não sabe onde procurar.</p>
+            <p class="fala"><strong>Apresentadora:</strong> [som de notificação ao fundo] Antes de continuar, um lembrete rápido: toda a produção deste episódio contou com apoio de inteligência artificial no roteiro e na narração, revisado integralmente pela nossa equipe.</p>
+            <p class="fala"><strong>Convidada:</strong> Isso é importante — a IA ajuda a organizar ideias, mas quem decide o que é preciso e respeitoso somos nós.</p>
+            <p class="fala"><strong>Apresentadora:</strong> Ótimo fechamento. Obrigada pela conversa, e até o próximo episódio do Acessa+!</p>
+          </div>
+        </details>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap footer-grid">
+    <div>
+      <p class="msg">Acessibilidade não é sobre exceções. É sobre garantir que ninguém precise de uma.</p>
+      <p style="margin-top:18px;">Projeto desenvolvido para a exposição escolar <em>Tecnologia, IA e Inclusão</em>, com apoio de ferramentas de inteligência artificial e revisão integral da equipe.</p>
+    </div>
+    <div>
+      <p><strong style="color:var(--paper);">Identificação da equipe</strong></p>
+      <p>Escola / turma: substituir<br>Ano letivo: substituir<br>Contato: substituir</p>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>© 2026 Acessa+ — projeto educacional, sem fins comerciais.</span>
+    <span>Feito com HTML semântico e apoio de IA.</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
